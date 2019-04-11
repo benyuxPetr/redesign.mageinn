@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mageinn Website">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<section class="checkout-page row no-gutters">
+    <div class="form col-xl-6">
+        <div class="form-block customer-information-block">
+            <div class="logo">
+                <img src="assets/images/logo-black.svg">
+            </div>
+            <div class="breadcrumbs">
+                <a href="/cart" class="breadcrumbs-item">Cart</a>
+                <div class="breadcrumbs-item">Customer information</div>
+                <a href="#" class="breadcrumbs-item go-to-payment-method">Payment method</a>
+            </div>
+            <a href="#" class="paypal-btn">
+                <img src="assets/images/paypal.png">
+            </a>
+            <div class="or-block">Or</div>
+            <div class="contact-information">
+                <div class="headline">
+                    <div class="heading">Contact information</div>
+                    <div class="have-account">Already have an account? <a href="#" class="link">Log in</a></div>
+                </div>
+                <form action="">
+                    <input type="text" class="text-input" placeholder="E-mail">
+                    <label class="check">Keep me up to date on news and exclusive offers
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+            </div>
+            <div class="billing-address">
+                <div class="heading">Billing address</div>
+                <form action="">
+                    <div class="form-groop">
+                        <input type="text" class="text-input" placeholder="First name">
+                        <input type="text" class="text-input" placeholder="Last name">
+                    </div>
+                    <div class="form-groop">
+                        <input type="text" class="text-input" placeholder="Country">
+                        <input type="text" class="text-input" placeholder="City">
+                        <input type="text" class="text-input" placeholder="Zip code">
+                    </div>
+                    <div class="form-groop">
+                        <input type="text" class="text-input" placeholder="Address">
+                    </div>
+                    <div class="button-line">
+                        <a href="#" class="link return">Returne to cart</a>
+                        <a href="#" class="btn-normal to-payment go-to-payment-method">Continue to payment method</a>
+                    </div>
+                </form>
+            </div>
+            <div class="copyright">© 2014-2018 Mageinn. All Rights Reserved.</div>
+        </div>
+        <div class="form-block payment-method-block" style="display: none">
+            <div class="logo">
+                <img src="assets/images/logo-black.svg">
+            </div>
+            <div class="breadcrumbs">
+                <a href="/cart" class="breadcrumbs-item">Cart</a>
+                <a href="#" class="breadcrumbs-item go-to-information-block">Customer information</a>
+                <div class="breadcrumbs-item">Payment method</div>
+            </div>
+            <div class="complete-contact">
+                <label class="complete-contact-label">
+                    <span>Contact:</span>
+                    <input type="text" class="complete-input" value="Alex@gmail.com" disabled="disabled">
+                </label>
+                <label class="complete-contact-label">
+                    <span>Billing:</span>
+                    <input type="text" class="complete-input" value="53, Friedrichstraße 43-45, 10969 WE, Austria" disabled="disabled">
+                </label>
+            </div>
+            <div class="payment-method">
+                <div class="heading">Payment method</div>
+                <div class="subtitle">All transactions are secure and encrypted</div>
+                <form action="">
+                    <div class="radio-container card-container">
+                        <label class="payment-radio" >
+                            Credit card
+                            <input type="radio" name="radio" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="payment-images">
+                            <img src="assets/images/mastercard.png">
+                            <img src="assets/images/visa.png">
+                        </div>
+                    </div>
+                    <div class="card-input">
+                        <div class="form-groop">
+                            <input type="text" class="text-input" placeholder="Card number">
+                        </div>
+                        <div class="form-groop">
+                            <input type="text" class="text-input name" placeholder="Cardholder name">
+                            <input type="text" class="text-input date" placeholder="MM / YY">
+                            <input type="text" class="text-input cvv" placeholder="CVV">
+                        </div>
+                    </div>
+                    <div class="radio-container pay-pal-container">
+                        <label class="payment-radio">
+                            <div class="pay-pal-image">
+                                <img src="assets/images/paypal.png">
+                            </div>
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="button-line">
+                        <a href="#" class="link return go-to-information-block">Return to customer information</a>
+                        <a href="#" class="btn-normal">Complete order</a>
+                    </div>
+                </form>
+            </div>
+            <div class="copyright">© 2014-2018 Mageinn. All Rights Reserved.</div>
+        </div>
+    </div>
+    <div class="checkout-cart col-xl-6">
+        <div class="cart-items">
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension1.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension1.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension1.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="total-price">
+            <div class="total">Total:</div>
+            <div class="price">$897.00</div>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/test.js"></script>
+</body>
+</html>

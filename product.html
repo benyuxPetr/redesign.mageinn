@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mageinn Website">
+    <title>Product page</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<svg style="display: none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path id="star-icon" d="M9.51643 12.8894L9 12.5779L8.48357 12.8894L4.94819 15.0215L5.88351 11.0005L6.02014 10.4131L5.5644 10.0182L2.44332 7.31363L6.55741 6.96062L7.15755 6.90913L7.39262 6.35454L9.00001 2.56238L10.6074 6.35455L10.8425 6.90913L11.4426 6.96062L15.5567 7.31363L12.4356 10.0182L11.9799 10.4131L12.1165 11.0005L13.0518 15.0215L9.51643 12.8894Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 40 36" xmlns="http://www.w3.org/2000/svg">
+    <path id="big-star-icon" d="M20.4961 28.0701L20 27.7866L19.5039 28.0701L9.16664 33.9761L11.8812 22.9204L12.0314 22.3087L11.5446 21.909L2.54604 14.5218L14.4631 13.5531L15.0531 13.5051L15.2948 12.9648L20 2.44854L24.7052 12.9648L24.947 13.5051L25.537 13.5531L37.454 14.5218L28.4555 21.909L27.9686 22.3087L28.1188 22.9204L30.8334 33.9761L20.4961 28.0701Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <path id="plus-icon" d="M8 1C8 0.447715 7.55228 0 7 0C6.44772 0 6 0.447715 6 1H8ZM6 13C6 13.5523 6.44772 14 7 14C7.55228 14 8 13.5523 8 13H6ZM13 8C13.5523 8 14 7.55228 14 7C14 6.44772 13.5523 6 13 6V8ZM1 6C0.447715 6 0 6.44772 0 7C0 7.55228 0.447715 8 1 8V6ZM6 1V13H8V1H6ZM13 6H1V8H13V6Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 30 25" xmlns="http://www.w3.org/2000/svg">
+    <path id="heart-icon" d="M4.13086 14.2447L14.9995 24.8555L25.868 14.2447C35.184 5.14971 22.7626 -3.94523 14.9994 3.63392C7.23619 -3.94519 -5.18474 5.14969 4.13086 14.2447Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="eye-icon-1" d="M13 0C5.03136 0 0.513746 8.6859 0.268041 9.07051C0.089347 9.32692 0 9.64744 0 10C0 10.3526 0.089347 10.6731 0.268041 10.9295C0.536082 11.3141 5.03136 20 13 20C20.9686 20 25.4863 11.3141 25.732 10.9295C25.9107 10.6731 26 10.3526 26 10C26 9.64744 25.9107 9.32692 25.732 9.07051C25.4863 8.6859 20.991 0 13 0ZM13 17.7778C7.15 17.7778 3.8866 12.1795 2.16667 10C3.8866 7.82051 7.25498 2.22222 13 2.22222C19.175 2.22222 22.1134 7.82051 23.8333 10C22.1134 12.1795 19.175 17.7778 13 17.7778Z"/>
+    <path id="eye-icon-2" fill-rule="evenodd" clip-rule="evenodd" d="M13 15C10.2297 15 8 12.7365 8 10C8 7.26351 10.2297 5 13 5C15.7703 5 18 7.22973 18 10C18 12.7703 15.7703 15 13 15ZM16 10C16 11.6364 14.6818 13 13 13C11.3636 13 10 11.6818 10 10C10 8.31818 11.3182 7 13 7C14.6364 7.04545 16 8.36364 16 10Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="guide-icon" d="M21 25V26C21.5523 26 22 25.5523 22 25H21ZM1 25H0C0 25.5523 0.447715 26 1 26L1 25ZM1 1V0C0.447715 0 0 0.447715 0 1L1 1ZM21 1H22C22 0.447715 21.5523 0 21 0V1ZM5.5 19C4.94772 19 4.5 19.4477 4.5 20C4.5 20.5523 4.94772 21 5.5 21V19ZM14 21C14.5523 21 15 20.5523 15 20C15 19.4477 14.5523 19 14 19V21ZM17 10V11C17.5523 11 18 10.5523 18 10H17ZM5 10H4C4 10.5523 4.44772 11 5 11V10ZM5 6V5C4.44772 5 4 5.44772 4 6H5ZM17 6H18C18 5.44772 17.5523 5 17 5V6ZM5.5 14C4.94772 14 4.5 14.4477 4.5 15C4.5 15.5523 4.94772 16 5.5 16V14ZM16.5 16C17.0523 16 17.5 15.5523 17.5 15C17.5 14.4477 17.0523 14 16.5 14V16ZM21 24H1V26H21V24ZM2 25V1H0V25H2ZM1 2H21V0H1V2ZM22 25V1H20V25H22ZM5.5 21H14V19H5.5V21ZM17 9H5V11H17V9ZM6 10V6H4V10H6ZM5 7H17V5H5V7ZM18 10V6H16V10H18ZM5.5 16H16.5V14H5.5V16Z"/>
+</svg>
+<svg style="display: none" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="like-icon" d="M0 21.8182H4.36364V8.72727H0V21.8182ZM24 9.81818C24 8.61818 23.0182 7.63636 21.8182 7.63636H14.9455L16.0364 2.61818C16.0364 2.50909 16.0364 2.4 16.0364 2.29091C16.0364 1.85455 15.8182 1.41818 15.6 1.09091L14.4 0L7.2 7.2C6.76364 7.52727 6.54545 8.07273 6.54545 8.72727V19.6364C6.54545 20.8364 7.52727 21.8182 8.72727 21.8182H18.5455C19.4182 21.8182 20.1818 21.2727 20.5091 20.5091L23.7818 12.7636C23.8909 12.5454 23.8909 12.2181 23.8909 12V9.81814H24C24 9.92727 24 9.81818 24 9.81818Z"/>
+</svg>
+
+
+
+<div class="product-page-header row no-gutters">
+    <div class="product-page-header-wrapper col">
+        <div class="header-container">
+            <header class="header-product-list">
+                <nav class="navbar navbar-expand-custom navbar-light">
+                    <a class="navbar-brand" href="/"><img src="assets/images/product_list_img/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="link" href="#">Extensions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="toolbar">
+                            <ul>
+                                <li class="search">
+                                    <img src="assets/images/product_list_img/Search.png">
+                                </li>
+                                <li class="wishlist">
+                                    <img src="assets/images/product_list_img/Love.png">
+                                </li>
+                                <li class="cart">
+                                    <img src="assets/images/product_list_img/Cart.png">
+                                </li>
+                                <li class="sign-in">Sign In</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="content-top-line row no-gutters">
+            <div class="product-inf-block col-xl-6 col-lg-12">
+                <a href="#"><img class="back-button" src="assets/images/product_img/Back.svg" alt=""></a>
+                <div class="product-thumb">
+                    <img src="assets/images/extension1.png" alt="">
+                </div>
+                <h1>Coupon Link</h1>
+            </div>
+            <div class="information-block col-xl-6 col-lg-12">
+                <div class="reviews-line">
+                    <div class="product-rating">
+                        <div class="rating-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                <use xlink:href="#star-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="rating-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                <use xlink:href="#star-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="rating-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                <use xlink:href="#star-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="rating-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                <use xlink:href="#star-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="rating-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                <use xlink:href="#star-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="#reviews" class="link" rel="nofollow">3 reviews</a>
+                </div>
+                <div class="button-line">
+                    <a href="" class="live-demo information-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="live-icon">
+                            <use xlink:href="#eye-icon-1"></use>
+                            <use xlink:href="#eye-icon-2"></use>
+                        </svg>
+                        Live demo
+                    </a>
+                    <a href="" class="user-guide information-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="user-guide-icon">
+                            <use xlink:href="#guide-icon"></use>
+                        </svg>
+                        User Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product-view">
+            <div class="gallery">
+                <div class="sync1 owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="assets/images/product_img/slider1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider2.png">
+                    </div>
+                </div>
+                <div class="sync2 owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="assets/images/product_img/slider1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider1.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/product_img/slider2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <div class="information-item">
+                    <div class="information-title">
+                        <div class="headline">Description</div>
+                        <div class="plus-minus">
+                            <div class="plus-minus-sign minus"></div>
+                            <div class="plus-minus-sign plus"></div>
+                        </div>
+                    </div>
+                    <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                </div>
+                <div class="information-item">
+                    <div class="information-title">
+                        <div class="headline">Key Features</div>
+                        <div class="plus-minus">
+                            <div class="plus-minus-sign minus"></div>
+                            <div class="plus-minus-sign plus"></div>
+                        </div>
+                    </div>
+                    <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                </div>
+                <div class="information-item">
+                    <div class="information-title">
+                        <div class="headline">Compatible With</div>
+                        <div class="plus-minus">
+                            <div class="plus-minus-sign minus"></div>
+                            <div class="plus-minus-sign plus"></div>
+                        </div>
+                    </div>
+                    <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black-block col-xl-auto col-lg-12">
+        <h4>Choose your options</h4>
+        <form action="">
+            <div class="options">
+                <div class="option-item">
+                    <span class="option-block-label">Edition</span>
+                    <div class="edition-radio">
+                        <label class="edition-check">
+                            <input type="radio" name="Edition" checked="checked" value="Community">
+                            <span class="option-btn">Community</span>
+                        </label>
+                        <label class="edition-check">
+                            <input type="radio" name="Edition" value="Enterprise">
+                            <span class="option-btn">Enterprise <span class="sum-price">+ 100$</span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <span class="option-block-label">URL to license</span>
+                    <label class="url-inp">
+                        <input type="text" placeholder="&nbsp;">
+                        <span class="label">Website URL</span>
+                    </label>
+                </div>
+                <div class="option-item">
+                    <span class="option-block-label">Additional services</span>
+                    <div class="additional-services">
+                        <div id="additional-services-show" class="option-btn">
+                            <span >Add services</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="plus">
+                                <use xlink:href="#plus-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="additional-services-radio" style="display: none">
+                            <label class="additional-services-check">
+                                <input type="radio" name="additional-services" checked="checked" value="6">
+                                <div class="option-btn">
+                                    <div class="selected-block">
+                                        <img src="assets/images/product_img/Check.svg">
+                                    </div>
+                                    <div class="text-block">
+                                        <span class="service">Support 3 months</span>
+                                        <span class="price">Free</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="additional-services-check">
+                                <input type="radio" name="additional-services" value="6">
+                                <div class="option-btn">
+                                    <div class="selected-block">
+                                        <img src="assets/images/product_img/Check.svg">
+                                    </div>
+                                    <div class="text-block">
+                                        <span class="service">Support 6 months</span>
+                                        <span class="price">+ 45$</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="additional-services-check">
+                                <input type="radio" name="additional-services" value="6">
+                                <div class="option-btn">
+                                    <div class="selected-block">
+                                        <img src="assets/images/product_img/Check.svg">
+                                    </div>
+                                    <div class="text-block">
+                                        <span class="service">Support 12 months</span>
+                                        <span class="price">+ 60$</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="additional-services-check">
+                                <input type="radio" name="additional-services" value="6">
+                                <div class="option-btn">
+                                    <div class="selected-block">
+                                        <img src="assets/images/product_img/Check.svg">
+                                    </div>
+                                    <div class="text-block">
+                                        <span class="service">2 test Magento® hosts</span>
+                                        <span class="price">+ 90$</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-line">
+                    <a href="#" class="submit-btn open-modal-btn" data-open-modal="cart">Add to cart — $59.99</a>
+                    <label class="like-check">
+                        <input type="checkbox">
+                        <div class="like-check-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="heart">
+                                <use xlink:href="#heart-icon"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="features-services">
+                    <div class="features-services-item">
+                        <div class="features-services-img">
+                            <img src="assets/images/product_img/Installation.svg" alt="">
+                        </div>
+                        <div class="features-services-text">
+                            Free</br>installation
+                        </div>
+                    </div>
+                    <div class="features-services-item">
+                        <div class="features-services-img">
+                            <img src="assets/images/product_img/Lifetime.svg" alt="">
+                        </div>
+                        <div class="features-services-text">
+                            Free Lifetime Upgrade
+                        </div>
+                    </div>
+                    <div class="features-services-item">
+                        <div class="features-services-img">
+                            <img src="assets/images/product_img/Support.svg" alt="">
+                        </div>
+                        <div class="features-services-text">
+                            Support until you get satisfaction
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<section class="detailed-information">
+    <div class="row">
+        <div class="left-menu-block">
+            <div class="info-menu sticky-menu">
+                <a href="#description" class="info-btn active">Description</a>
+                <a href="#screenshots" class="info-btn ">Screenshots</a>
+                <a href="#release_notes" class="info-btn">Release notes</a>
+                <a href="#reviews" class="info-btn">Reviews</a>
+                <a href="#also_like" class="info-btn">You may also like</a>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="detailed-content">
+                <div class="detailed-info-container">
+                    <div class="detailed-description detailed-section" id="description">
+                        <h2>Description</h2>
+                        <p>This Magento module allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device. You can create hints for different store views.</p>
+                        <h4>Key Features:</h4>
+                        <ul class="or-list">
+                            <li>Upload Shipping Rates in Bulk using CSV</li>
+                            <li>Offer Various Combinations of Shipping Rates based</li>
+                            <li>This Magento module allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device. You can create hints for different store views.</li>
+                            <li>Charge Shipping Rates either in Percentage or at a Flat Rate</li>
+                            <li>Virtual Product Type Exclusion</li>
+                            <li>Apply Shipping Rates for Specific Product</li>
+                            <li>Types & Groups</li>
+                        </ul>
+                    </div>
+                    <div class="detailed-screenshots detailed-section" id="screenshots">
+                        <h2>Screenshots</h2>
+                        <div class="gallery">
+                            <div class="sync3 owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider1.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider2.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider1.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider2.png">
+                                </div>
+                            </div>
+                            <div class="sync4 owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider1.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider2.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider1.png">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/product_img/slider2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detailed-release_notes detailed-section" id="release_notes">
+                        <h2>Release notes</h2>
+                        <h4>Key Features:</h4>
+                        <ul class="or-list">
+                            <li>Compatible with CE: 2.1 2.2</li>
+                            <li>Compatible with EE: 2.1 2.2</li>
+                            <li>Stability: Stable Build</li>
+                            <li>Description:</li>
+                            <li>Add possibility to disable Nosto's multi currency features</li>
+                        </ul>
+                        <h4>Key Features:</h4>
+                        <ul class="or-list">
+                            <li>Compatible with CE: 2.1 2.2</li>
+                            <li>Compatible with EE: 2.1 2.2</li>
+                            <li>Stability: Stable Build</li>
+                            <li>Description:</li>
+                            <li>Add possibility to disable Nosto's multi currency features</li>
+                        </ul>
+                    </div>
+                    <div class="detailed-reviews detailed-section" id="reviews">
+                        <div class="reviews-topline">
+                            <h2>Reviews</h2>
+                            <a href="#" class="btn-normal open-modal-btn" data-open-modal="review">Leave your reviews</a>
+                        </div>
+                        <div class="reviews-items">
+                            <div class="reviews-item">
+                                <div class="user-info">
+                                    <div class="name">Alex</div>
+                                    <div class="ago">7 months ago</div>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review-body">
+                                    <div class="review-headline">Great job MageDelight</div>
+                                    <div class="review">MageDelight's Payfort Payment Gateway extensions offers the convenience of online payment to our Middle East customers, with uncompromising security.</div>
+                                </div>
+                                <div class="review-rate">
+                                    <div class="like rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="like-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">25</div>
+                                    </div>
+                                    <div class="dislike rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="dislike-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">6</div>
+                                    </div>
+                                    <a href="#" class="link">Comment</a>
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="user-info">
+                                    <div class="name">Alex</div>
+                                    <div class="ago">7 months ago</div>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review-body">
+                                    <div class="review-headline">Great job MageDelight</div>
+                                    <div class="review">MageDelight's Payfort Payment Gateway extensions offers the convenience of online payment to our Middle East customers, with uncompromising security.</div>
+                                </div>
+                                <div class="review-rate">
+                                    <div class="like rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="like-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">25</div>
+                                    </div>
+                                    <div class="dislike rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="dislike-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">6</div>
+                                    </div>
+                                    <a href="#" class="link">Comment</a>
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="user-info">
+                                    <div class="name">Alex</div>
+                                    <div class="ago">7 months ago</div>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="review-body">
+                                    <div class="review-headline">Great job MageDelight</div>
+                                    <div class="review">MageDelight's Payfort Payment Gateway extensions offers the convenience of online payment to our Middle East customers, with uncompromising security.</div>
+                                </div>
+                                <div class="review-rate">
+                                    <div class="like rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="like-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">25</div>
+                                    </div>
+                                    <div class="dislike rate-item">
+                                        <a href="#" class="rate-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="dislike-svg">
+                                                <use xlink:href="#like-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="number">6</div>
+                                    </div>
+                                    <a href="#" class="link">Comment</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" id="see-more-btn" class="see-more">See more reviews</a>
+                    </div>
+                </div>
+                <div class="detailed-also_like detailed-section" id="also_like">
+                    <h2>You may also like</h2>
+                    <div class="row no-gutters first also-like-list">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                            <img src="assets/images/extension1.png">
+                                        </div>
+                                        <div class="col-md-9 col-xs-6 card-info">
+                                            <div class="row card-headline">
+                                                <p class="card-text title">Salesforce Connector </p>
+                                                <a href="#" class="card-text topline">M2</a>
+                                            </div>
+                                            <div class="row card-botline">
+                                                <div class="reviews-block">
+                                                    <div class="product-rating">
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <p class="reviews">8 reviews</p>
+                                                </div>
+                                                <span>#Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                            <br>
+                                            <p class="card-text price">$299.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                            <img src="assets/images/extension1.png">
+                                        </div>
+                                        <div class="col-md-9 col-xs-6 card-info">
+                                            <div class="row card-headline">
+                                                <p class="card-text title">Salesforce Connector </p>
+                                                <a href="#" class="card-text topline">M2</a>
+                                            </div>
+                                            <div class="row card-botline">
+                                                <div class="reviews-block">
+                                                    <div class="product-rating">
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <p class="reviews">8 reviews</p>
+                                                </div>
+                                                <span>#Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                            <br>
+                                            <p class="card-text price">$299.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                            <img src="assets/images/extension1.png">
+                                        </div>
+                                        <div class="col-md-9 col-xs-6 card-info">
+                                            <div class="row card-headline">
+                                                <p class="card-text title">Salesforce Connector </p>
+                                                <a href="#" class="card-text topline">M2</a>
+                                            </div>
+                                            <div class="row card-botline">
+                                                <div class="reviews-block">
+                                                    <div class="product-rating">
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <p class="reviews">8 reviews</p>
+                                                </div>
+                                                <span>#Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                            <br>
+                                            <p class="card-text price">$299.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                            <img src="assets/images/extension1.png">
+                                        </div>
+                                        <div class="col-md-9 col-xs-6 card-info">
+                                            <div class="row card-headline">
+                                                <p class="card-text title">Salesforce Connector </p>
+                                                <a href="#" class="card-text topline">M2</a>
+                                            </div>
+                                            <div class="row card-botline">
+                                                <div class="reviews-block">
+                                                    <div class="product-rating">
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-item">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                                <use xlink:href="#star-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <p class="reviews">8 reviews</p>
+                                                </div>
+                                                <span>#Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                            <br>
+                                            <p class="card-text price">$299.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="request-button">Send a Request</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="gl-modal" data-modal="review">
+    <div class="modal_form">
+        <div class="modal_close">
+            <div class="plus-minus">
+                <div class="plus-minus-sign minus"></div>
+                <div class="plus-minus-sign plus"></div>
+            </div>
+        </div>
+        <form action="">
+            <h2>Write a Review</h2>
+            <h4>Rate It</h4>
+            <div class="product-rate">
+                <div class="rating-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                        <use xlink:href="#big-star-icon"></use>
+                    </svg>
+                </div>
+                <div class="rating-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                        <use xlink:href="#big-star-icon"></use>
+                    </svg>
+                </div>
+                <div class="rating-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                        <use xlink:href="#big-star-icon"></use>
+                    </svg>
+                </div>
+                <div class="rating-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                        <use xlink:href="#big-star-icon"></use>
+                    </svg>
+                </div>
+                <div class="rating-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                        <use xlink:href="#big-star-icon"></use>
+                    </svg>
+                </div>
+            </div>
+            <h4>Rate It</h4>
+            <div class="input-container">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="title" placeholder="Review Title">
+                <textarea name="comment" placeholder="Review"></textarea>
+            </div>
+            <button type="submit" class="btn-normal">Send review</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+</div>
+<div class="gl-modal" data-modal="cart">
+    <div class="modal_form">
+        <div class="modal_close">
+            <div class="plus-minus">
+                <div class="plus-minus-sign minus"></div>
+                <div class="plus-minus-sign plus"></div>
+            </div>
+        </div>
+        <h2>Added to cart</h2>
+        <div class="added-to-cart cart-items">
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension2.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="added-button-line">
+            <a href="#" class="btn-normal-black modal_close">Continue shopping</a>
+            <a href="#" class="btn-normal">Go to shopping cart</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<hr>
+<section class="bottom-menu">
+    <div class="row">
+        <div class="col-4 col-sm-12 col-md-6">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Extensions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-8 col-sm-12 col-md-6">
+            <div class="right">
+                <nav class="navbar navbar-expand-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">sales@mageinn.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">+7 900 322 7676</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/face.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/insta.svg"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="assets/images/MAGEINN-04.png" alt="">
+        </div>
+        <div class="col-md-8">
+            <h6>© 2014-2018 Mageinn. All Rights Reserved</h6>
+        </div>
+        <div class="col-md-2">
+            <h5>Sign in</h5>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/test.js"></script>
+</body>
+</html>
