@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mageinn Website">
+    <title>cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header class="header-product-list">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/"><img src="assets/images/product_list_img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="link" href="#">Extensions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="toolbar">
+                <ul>
+                    <li class="search">
+                        <img src="assets/images/product_list_img/Search.png">
+                    </li>
+                    <li class="wishlist">
+                        <img src="assets/images/product_list_img/Love.png">
+                    </li>
+                    <li class="cart">
+                        <img src="assets/images/product_list_img/Cart.png">
+                    </li>
+                    <li class="sign-in">Sign In</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr>
+
+
+<svg style="display: none" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="arrow-icon" d="M0.999999 8L20 8M20 8L13.1087 1M20 8L13.1087 15" stroke-width="2" stroke-linecap="round"/>
+</svg>
+<svg style="display: none" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="download-icon-1" d="M10 1L10 13.8913M10 13.8913L15.5 8.5M10 13.8913L4.5 8.5" stroke-width="2" stroke-linecap="round"/>
+    <path id="download-icon-2" d="M2 16C2 15.4477 1.55228 15 1 15C0.447715 15 0 15.4477 0 16H2ZM1 20H0C0 20.5523 0.447715 21 1 21L1 20ZM19 20V21C19.5523 21 20 20.5523 20 20H19ZM20 16C20 15.4477 19.5523 15 19 15C18.4477 15 18 15.4477 18 16H20ZM0 16V20H2V16H0ZM1 21H19V19H1V21ZM20 20V16H18V20H20Z"/>
+</svg>
+
+
+<section class="account">
+    <div class="row">
+        <div class="left-menu-block">
+            <div class="hello-text">Hello, Alex.</div>
+            <div class="info-menu">
+                <a href="#" class="info-btn active" data-show-section="1">Account details</a>
+                <a href="#" class="info-btn " data-show-section="2">Order history</a>
+                <a href="#" class="info-btn" data-show-section="3">Downloads</a>
+                <a href="#" class="info-btn" data-show-section="4">Addresses</a>
+                <a href="#" class="info-btn logout">Logout</a>
+            </div>
+        </div>
+        <div class="col-xl-8 details-container">
+            <div class="details can-edit account-section" data-section="1">
+                <h1>Account details</h1>
+                <div class="personal-items">
+                    <div class="personal-item">
+                        <div class="headline">
+                            <div class="head">Personnal information</div>
+                            <a href="#" class="link edit-link">Edit</a>
+                        </div>
+                        <div class="information edit-hide">
+                            <div>Alex</div>
+                            <div>Alex@gmail.com</div>
+                        </div>
+                        <div class="edit-block edit-show">
+                            <form action="">
+                                <div class="form-group name">
+                                    <input type="text" class="mr" placeholder="Mr">
+                                    <input type="text" class="name" placeholder="Name">
+                                    <input type="text" class="second-name" placeholder="Second name">
+                                </div>
+                                <div class="form-group email">
+                                    <input type="text" placeholder="E-mail">
+                                </div>
+                                <div class="form-group date">
+                                    <input type="text" class="day" placeholder="Day">
+                                    <input type="text" class="month" placeholder="Month">
+                                    <input type="text" class="year" placeholder="Year">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="headline">
+                            <div class="head">Password</div>
+                            <a href="#" class="link edit-link">Edit</a>
+                        </div>
+                        <div class="information edit-hide">
+                            <div>••••••••••••</div>
+                        </div>
+                        <div class="edit-block edit-show">
+                            <div class="form-group password">
+                                <input type="text" placeholder="Current password">
+                                <input type="text" placeholder="New password">
+                                <input type="text" placeholder="Confirm new password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-normal save-btn">Save changes</a>
+            </div>
+            <div class="history account-section" data-section="2">
+                <h2>Order history</h2>
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="order-settings">
+                            <div class="order-col">
+                                <div class="headline">Order</div>
+                                <div class="value">#13308</div>
+                            </div>
+                            <div class="order-col">
+                                <div class="headline">Date</div>
+                                <div class="value">June 27, 2018</div>
+                            </div>
+                            <div class="order-col">
+                                <div class="headline">Status</div>
+                                <div class="value pending-payment">Pending payment</div>
+                            </div>
+                            <div class="order-col">
+                                <div class="headline">Total</div>
+                                <div class="value">$313.98 for 2 items</div>
+                            </div>
+                        </div>
+                        <div class="view-details">
+                            <a href="#" class="link open-modal-btn" data-open-modal="order-details">View details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                <use xlink:href="#arrow-icon"></use>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="downloads account-section" data-section="3">
+                <h2>Downloads</h2>
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="order-settings">
+                            <div class="img">
+                                <img src="assets/images/extension1.png" alt="">
+                            </div>
+                            <div class="order-col">
+                                <div class="headline">Name</div>
+                                <div class="value">Magento 2 Attribute Hints</div>
+                            </div>
+                        </div>
+                        <div class="view-details">
+                            <a href="#" class="link open-modal-btn downloads-button" data-open-modal="downloads-details">Download
+                                <svg xmlns="http://www.w3.org/2000/svg" class="downloads">
+                                    <use xlink:href="#download-icon-1"></use>
+                                    <use xlink:href="#download-icon-2"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="link open-modal-btn" data-open-modal="downloads-details">View details
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addresses can-edit account-section" data-section="4">
+                <h2>Account details</h2>
+                <div class="personal-items">
+                    <div class="personal-item">
+                        <div class="headline">
+                            <div class="head">Billing addres</div>
+                            <a href="#" class="link edit-link">Edit</a>
+                        </div>
+                        <div class="information edit-hide">You have not set up this type of address yet.
+                        </div>
+                        <div class="edit-block edit-show">
+                            <form action="">
+                                <div class="form-block name-block">
+                                    <div class="form-group">
+                                        <input type="text" class="name" placeholder="First name">
+                                        <input type="text" class="last-name" placeholder="Last name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="second-name" placeholder="Company (optional)">
+                                    </div>
+                                </div>
+                                <div class="form-block address-block">
+                                    <div class="form-group location-group">
+                                        <input type="text" class="country" placeholder="Country">
+                                        <input type="text" class="city" placeholder="City">
+                                        <input type="text" class="zip-code" placeholder="Zip code">
+                                    </div>
+                                    <div class="form-group address-group">
+                                        <input type="text" class="address" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="form-block contacts-block">
+                                    <div class="form-group phone-group">
+                                        <input type="text" class="area-code" placeholder="Area code">
+                                        <input type="text" class="phone-number" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-group e-mail-group">
+                                        <input type="text" class="e-mail" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-normal save-btn">Save changes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="gl-modal account-modal" data-modal="order-details">
+    <div class="modal_form">
+        <div class="modal_close">
+            <div class="plus-minus">
+                <div class="plus-minus-sign minus"></div>
+                <div class="plus-minus-sign plus"></div>
+            </div>
+        </div>
+        <div class="top-line">
+            <h2>Order details</h2>
+            <a href="#" class="btn-normal pay-btn">Pay</a>
+        </div>
+
+        <div class="added-to-cart cart-items">
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension2.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+            <div class="cart-item row no-gutters">
+                <div class="image col-sm-2">
+                    <img src="assets/images/extension2.png">
+                </div>
+                <div class="content col">
+                    <div class="headline">
+                        <div class="product-name">Salesforce Connector × 1</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                    <div class="product-description">Magento 2, Edition Community, Professional Configuration - $25.00, Support Period 6 months - $79.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-details">
+            <div class="details-item">
+                <div class="setting">Payment method:</div>
+                <div class="payment-method">Paypal</div>
+            </div>
+            <div class="details-item">
+                <div class="setting">Total:</div>
+                <div class="total-price">$598.00</div>
+            </div>
+        </div>
+        <div class="customer-details">
+            <div class="pay-hide">
+                <h3>Customer Details</h3>
+                <div class="customer-contacts">
+                    <div class="email"><span>Email:</span> Alex@gmail.com</div>
+                    <div class="phone"><span>Phone:</span> +7 895 999 99 99</div>
+                </div>
+                <div class="customer-addres">
+                    <div class="addres">
+                        <span>Billing addres:</span>
+                        <div>Alex Roony</div>
+                        <div>USA</div>
+                        <div>San Francisco</div>
+                        <div>427 Castro St</div>
+                    </div>
+                </div>
+                <a href="#" class="btn-normal pay-btn">Pay</a>
+            </div>
+            <div class="pay-show">
+                <div class="payment-method">
+                    <div class="heading">Payment method</div>
+                    <div class="subtitle">All transactions are secure and encrypted</div>
+                    <form action="">
+                        <div class="radio-container card-container">
+                            <label class="payment-radio" >
+                                Credit card
+                                <input type="radio" name="radio" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="payment-images">
+                                <img src="assets/images/mastercard.png">
+                                <img src="assets/images/visa.png">
+                            </div>
+                        </div>
+                        <div class="card-input">
+                            <div class="form-groop">
+                                <input type="text" class="text-input" placeholder="Card number">
+                            </div>
+                            <div class="form-groop">
+                                <input type="text" class="text-input name" placeholder="Cardholder name">
+                                <input type="text" class="text-input date" placeholder="MM / YY">
+                                <input type="text" class="text-input cvv" placeholder="CVV">
+                            </div>
+                        </div>
+                        <div class="radio-container pay-pal-container">
+                            <label class="payment-radio">
+                                <div class="pay-pal-image">
+                                    <img src="assets/images/paypal.png">
+                                </div>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button-line">
+                            <a href="#" class="link return modal_close">Return to customer information</a>
+                            <a href="#" class="btn-normal">Complete order</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+<div class="gl-modal account-modal" data-modal="downloads-details">
+    <div class="modal_form">
+        <div class="modal_close">
+            <div class="plus-minus">
+                <div class="plus-minus-sign minus"></div>
+                <div class="plus-minus-sign plus"></div>
+            </div>
+        </div>
+        <h2>Downloads details</h2>
+        <div class="customer-details">
+            <div class="details">
+                <div class="customer-contacts">
+                    <div><span>Name:</span> Magento 2 Attribute Hints</div>
+                    <div><span>Edition:</span> Community, Professional Configuration</div>
+                    <div><span>Support Period:</span> 6 months</div>
+                </div>
+                <div class="img">
+                    <img src="assets/images/extension1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="button-line">
+            <a href="#" class="link open-modal-btn downloads-button" data-open-modal="downloads-details">Download
+                <svg xmlns="http://www.w3.org/2000/svg" class="downloads">
+                    <use xlink:href="#download-icon-1"></use>
+                    <use xlink:href="#download-icon-2"></use>
+                </svg>
+            </a>
+            <a href="#" class="btn-normal-black modal_close">Learn more</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+<hr>
+<section class="bottom-menu">
+    <div class="row">
+        <div class="col-4 col-sm-12 col-md-6">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Extensions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-8 col-sm-12 col-md-6">
+            <div class="right">
+                <nav class="navbar navbar-expand-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">sales@mageinn.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">+7 900 322 7676</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/face.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/insta.svg"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="assets/images/MAGEINN-04.png" alt="">
+        </div>
+        <div class="col-md-8">
+            <h6>© 2014-2018 Mageinn. All Rights Reserved</h6>
+        </div>
+        <div class="col-md-2">
+            <h5>Sign in</h5>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/test.js"></script>
+</body>
+</html>
