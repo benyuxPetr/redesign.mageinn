@@ -20,9 +20,9 @@
 <body>
     <header class="header-product-list">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="assets/images/product_list_img/logo.png"></a>
+            <a class="navbar-brand" href="/"><img src="assets/images/product_list_img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -30,19 +30,19 @@
                         <a class="link" href="#">Extensions</a>
                     </li>
                     <li class="nav-item">
-                      <a class="link" href="#">Services</a>
+                        <a class="link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                      <a class="link" href="#">About</a>
+                        <a class="link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="link" href="#">Support</a>
+                        <a class="link" href="#">Support</a>
                     </li>
                     <li class="nav-item">
-                      <a class="link" href="#">Contact</a>
+                        <a class="link" href="#">Contact</a>
                     </li>
                 </ul>
                 <div class="toolbar">
@@ -51,7 +51,7 @@
                             <img src="assets/images/product_list_img/Search.png">
                         </li>
                         <li class="wishlist">
-                            <img src="assets/images/product_list_img/Heart.png">
+                            <img src="assets/images/product_list_img/Love.png">
                         </li>
                         <li class="cart">
                             <img src="assets/images/product_list_img/Cart.png">
@@ -78,8 +78,58 @@
             </div>
             <div class="overlay"></div>
         </div>
+        <div class="sign-in-modal">
+            <div class="modal_form">
+                <div class="sign-in-buttons modal-item">
+                    <a href="" class="btn-normal-black link-with-img"><img src="assets/images/google.png" alt="">Sign in with google</a>
+                    <a href="" class="btn-normal-black link-with-img"><img src="assets/images/facebook.png" alt="">Sign in with facebook</a>
+                </div>
+                <div class="or-block modal-item">Or</div>
+                <form class="sign-in-form sign-in-item modal-item">
+                    <div class="form-inputs">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn-normal">Sign in</button>
+                </form>
+                <div class="bottom-line sign-in-item modal-item">
+                    <a href="#" class="link-small">Forgot password?</a>
+                    <div>No account?<a href="" class="link-small show-sign-up">Sign up</a></div>
+                </div>
+                <form class="sign-in-form sign-up-item modal-item">
+                    <div class="form-inputs">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <button class="btn-normal sign-up-btn">Sign up</button>
+                </form>
+                <div class="bottom-line sign-up-item modal-item">
+                    <div>Already have an account? <a href="" class="link-small show-sign-in">Sign in</a></div>
+                </div>
+                <form class="sign-in-form create-account-item">
+                    <div class="form-title">Tell us about yourself</div>
+                    <div class="form-inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Country">
+                    </div>
+                    <button type="submit" class="btn-normal sign-up-btn">Create Account</button>
+                </form>
+                <div class="bottom-line create-account-item">
+                    <div>By clicking "Create Account" you agree to our <a href="" class="link-small show-sign-in">Privacy Policy</a></div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
     </header>
     <hr>
+
+    <svg style="display: none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+        <path id="star-icon" d="M9.51643 12.8894L9 12.5779L8.48357 12.8894L4.94819 15.0215L5.88351 11.0005L6.02014 10.4131L5.5644 10.0182L2.44332 7.31363L6.55741 6.96062L7.15755 6.90913L7.39262 6.35454L9.00001 2.56238L10.6074 6.35455L10.8425 6.90913L11.4426 6.96062L15.5567 7.31363L12.4356 10.0182L11.9799 10.4131L12.1165 11.0005L13.0518 15.0215L9.51643 12.8894Z"/>
+    </svg>
+    <svg style="display: none" viewBox="0 0 30 25" xmlns="http://www.w3.org/2000/svg">
+        <path id="heart-icon" d="M4.13086 14.2447L14.9995 24.8555L25.868 14.2447C35.184 5.14971 22.7626 -3.94523 14.9994 3.63392C7.23619 -3.94519 -5.18474 5.14969 4.13086 14.2447Z"/>
+    </svg>
+
     <section class="filter">
         <div class="row">
             <div class="col-6 col-md-2">
@@ -115,1317 +165,1058 @@
     <hr>
 <!--product-list-->
     <section class="product-list">
-        <div class="block-product action" id="block-product1">
-            <!--one row-->
-            <div class="row first">
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
+        <div class="row products">
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
                                     <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
+                                </a>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--two row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--three row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension3.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-<!--four row-->
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="block-product" id="block-product2">
-            <!--one row-->
-            <div class="row first">
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
                                     <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
+                                </a>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--two row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension1.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--three row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension3.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--four row-->
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension4.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block-product" id="block-product3">
-            <!--one row-->
-            <div class="row first">
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--two row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--three row-->
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--four row-->
-
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <img src="assets/images/extension2.png">
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="card-text title">Salesforce Connector </p>
-                                    <div class="rating">
-                                        <a href="#5" title="Give 5 stars">☆</a>
-                                        <a href="#4" title="Give 4 stars">☆</a>
-                                        <a href="#3" title="Give 3 stars">☆</a>
-                                        <a href="#2" title="Give 2 stars">☆</a>
-                                        <a href="#1" title="Give 1 star">☆</a>
-
-                                    </div>
-                                    <p class="reviews">8 reviews</p>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <a href="#" class="card-text topline">M2</a>
-                                    <br>
-                                    <span>#Marketing</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
-                                    <br>
-                                    <p class="card-text price">$299.00</p>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="circle">
-                    <img class="product-list-choice product-list-choice1" data-num-product-list="1" src="assets/images/product_list_img/Ellipse.png" alt="">
-                    <img class="product-list-choice product-list-choice2" data-num-product-list="2" src="assets/images/product_list_img/Ellipse.png" alt="">
-                    <img class="product-list-choice product-list-choice3" data-num-product-list="3" src="assets/images/product_list_img/Ellipse.png" alt="">
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                    <img src="assets/images/extension1.png">
+                                </a>
+                            </div>
+                            <div class="col-md-9 col-xs-6 card-info">
+                                <div class="row card-headline">
+                                    <a href="#" class="open-product-modal-btn" data-open-modal="product-1">
+                                        <p class="card-text title">Salesforce Connector</p>
+                                    </a>
+                                    <a href="#" class="card-text topline">M2</a>
+                                </div>
+                                <div class="row card-botline">
+                                    <div class="reviews-block">
+                                        <div class="product-rating">
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="rating-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                                    <use xlink:href="#star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="reviews">8 reviews</p>
+                                    </div>
+                                    <span>#Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="information-about-product">By using our Magento 2 Salesforce CRM Integration extension, store managers will be able to automatically sync all customer’s data</p>
+                                <br>
+                                <p class="card-text price">$299.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 <!--end product-list-->
+
+    <div class="product-modal" data-modal="product-1">
+        <div class="modal_form">
+            <div class="modal_close">
+                <div class="plus-minus">
+                    <div class="plus-minus-sign minus"></div>
+                    <div class="plus-minus-sign plus"></div>
+                </div>
+            </div>
+            <div class="modal-content-wrap row no-gutters">
+                <div class="gallery col-4">
+                    <div class="sync1 owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/images/product_img/slider1.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider2.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider1.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider2.png">
+                        </div>
+                    </div>
+                    <div class="sync2 owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/images/product_img/slider1.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider2.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider1.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/product_img/slider2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-wrap col">
+                    <div class="top-line">
+                        <div class="product-thumb">
+                            <img src="assets/images/extension1.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Magento 2 Attribute Hints</div>
+                            <div class="reviews-line">
+                                <div class="product-rating">
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="rating-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="star">
+                                            <use xlink:href="#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#reviews" class="link" rel="nofollow">3 reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="information-item">
+                            <div class="information-title">
+                                <div class="headline">Description</div>
+                                <div class="plus-minus">
+                                    <div class="plus-minus-sign minus"></div>
+                                    <div class="plus-minus-sign plus"></div>
+                                </div>
+                            </div>
+                            <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                        </div>
+                        <div class="information-item">
+                            <div class="information-title">
+                                <div class="headline">Key Features</div>
+                                <div class="plus-minus">
+                                    <div class="plus-minus-sign minus"></div>
+                                    <div class="plus-minus-sign plus"></div>
+                                </div>
+                            </div>
+                            <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                        </div>
+                        <div class="information-item">
+                            <div class="information-title">
+                                <div class="headline">Compatible With</div>
+                                <div class="plus-minus">
+                                    <div class="plus-minus-sign minus"></div>
+                                    <div class="plus-minus-sign plus"></div>
+                                </div>
+                            </div>
+                            <div class="information-content">This Magento extension allows you to improve the usability of your Magento 2 store by enriching product attributes and its options as well as product options with descriptive tooltips/hints that work beautifully in every browser on any device.</div>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <a href="#" class="btn-normal add-to-cart-btn">Add to cart — $59.99</a>
+                        <label class="like-check">
+                            <input type="checkbox">
+                            <div class="like-check-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="heart">
+                                    <use xlink:href="#heart-icon"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <a href="#" class="btn-normal-black">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
 
     <hr>
     <!--bottom-menu-->

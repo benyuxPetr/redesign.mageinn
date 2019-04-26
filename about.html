@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mageinn Website">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header class="header-product-list">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/"><img src="assets/images/product_list_img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="link" href="#">Extensions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="toolbar">
+                <ul>
+                    <li class="search">
+                        <img src="assets/images/product_list_img/Search.png">
+                    </li>
+                    <li class="wishlist">
+                        <img src="assets/images/product_list_img/Love.png">
+                    </li>
+                    <li class="cart">
+                        <img src="assets/images/product_list_img/Cart.png">
+                    </li>
+                    <li class="sign-in">Sign In</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="search-modal">
+        <div class="modal_form">
+            <form class="search-form">
+                <button type="submit">
+                    <img src="assets/images/Search.svg" alt="">
+                </button>
+                <input type="text" placeholder="Type here">
+            </form>
+            <div class="modal_close">
+                <div class="plus-minus">
+                    <div class="plus-minus-sign minus"></div>
+                    <div class="plus-minus-sign plus"></div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="sign-in-modal">
+        <div class="modal_form">
+            <div class="sign-in-buttons modal-item">
+                <a href="" class="btn-normal-black link-with-img"><img src="assets/images/google.png" alt="">Sign in with google</a>
+                <a href="" class="btn-normal-black link-with-img"><img src="assets/images/facebook.png" alt="">Sign in with facebook</a>
+            </div>
+            <div class="or-block modal-item">Or</div>
+            <form class="sign-in-form sign-in-item modal-item">
+                <div class="form-inputs">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Password">
+                </div>
+                <button type="submit" class="btn-normal">Sign in</button>
+            </form>
+            <div class="bottom-line sign-in-item modal-item">
+                <a href="#" class="link-small">Forgot password?</a>
+                <div>No account?<a href="" class="link-small show-sign-up">Sign up</a></div>
+            </div>
+            <form class="sign-in-form sign-up-item modal-item">
+                <div class="form-inputs">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Password">
+                </div>
+                <button class="btn-normal sign-up-btn">Sign up</button>
+            </form>
+            <div class="bottom-line sign-up-item modal-item">
+                <div>Already have an account? <a href="" class="link-small show-sign-in">Sign in</a></div>
+            </div>
+            <form class="sign-in-form create-account-item">
+                <div class="form-title">Tell us about yourself</div>
+                <div class="form-inputs">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Country">
+                </div>
+                <button type="submit" class="btn-normal sign-up-btn">Create Account</button>
+            </form>
+            <div class="bottom-line create-account-item">
+                <div>By clicking "Create Account" you agree to our <a href="" class="link-small show-sign-in">Privacy Policy</a></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+</header>
+<hr>
+
+<svg style="display: none" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="back-arrow-icon" d="M21 8L2 8M2 8L8.8913 15M2 8L8.8913 1" stroke-width="2" stroke-linecap="round"/>
+</svg>
+<svg style="display: none" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="arrow-icon" d="M0.999999 8L20 8M20 8L13.1087 1M20 8L13.1087 15" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+<section class="about">
+    <div class="row">
+        <div class="left-menu-block">
+            <div class="info-menu">
+                <a href="#" class="info-btn active" data-show-section="1">About</a>
+                <a href="#" class="info-btn " data-show-section="2">Career</a>
+            </div>
+        </div>
+        <div class="col details-container">
+            <div class="about-us-page hide-section" data-section="1">
+                <h1>Mageinn</h1>
+                <p class="subtitle-text">We love eCommerce for its rewarding complexity.</p>
+                <div class="main-image">
+                    <img src="assets/images/about_about_70/image.png">
+                </div>
+                <div class="about_about_70-text">
+                    <p>We are a young, motivated company based in Kazan, Russia. Although we have experience with various platforms, Magento is the number one choice for us. Our main focus is to provide quality solutions for eCommerce businesses.</p>
+                    <p>Unlike other companies that use outsourcing, we can guarantee compliance with deadlines and ensure quality all the way through the development of your project.</p>
+                    <p>We are proud of long-term cooperation with our customers, we strive to help them develop business and achieve their goals. Our reputation is built on quality, which we demonstrate every day. That’s why our customers stay with us for many years.</p>
+                </div>
+                <section class="facts">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="facts-information">
+                                <img src="assets/images/Vector.svg" alt="">
+                            </div>
+                            <h5>Technology Partner</h5>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="facts-information">
+                                <img src="assets/images/5yr.svg" alt="">
+                            </div>
+                            <h5>Technology Partner</h5>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="facts-information">
+                                <img src="assets/images/1k.svg" alt="">
+                            </div>
+                            <h5>Technology Partner</h5>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="facts-information">
+                                <img src="assets/images/96.svg" alt="">
+                            </div>
+                            <h5>Technology Partner</h5>
+                        </div>
+                    </div>
+                </section>
+                <h2>Our clients</h2>
+                <div class="clients-items">
+                    <img src="assets/images/1.png" alt="">
+                    <img src="assets/images/2.png" alt="">
+                    <img src="assets/images/3.png" alt="">
+                    <img src="assets/images/5.png" alt="">
+                    <img src="assets/images/6.png" alt="">
+                    <img src="assets/images/1.png" alt="">
+                    <img src="assets/images/2.png" alt="">
+                    <img src="assets/images/3.png" alt="">
+                    <img src="assets/images/5.png" alt="">
+                    <img src="assets/images/6.png" alt="">
+                </div>
+                <div class="send-request-container">
+                    <a href="#" class="request-button">Send a Request</a>
+                </div>
+            </div>
+            <div class="career-page hide-section" data-section="2">
+                <h2>Career</h2>
+                <p class="subtitle-text">We’re building a better eCommerce for the digital age. Come join us!</p>
+
+                <div class="vacancy-items">
+                    <div class="vacancy-item">
+                        <div class="vacancy-name">Product Designer</div>
+                        <div class="vacancy-location">Kazan</div>
+                        <div class="view-details">
+                            <a href="#" class="link open-modal-btn" data-open-modal="magento-outsourcing">View details
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vacancy-item">
+                        <div class="vacancy-name">Product Designer</div>
+                        <div class="vacancy-location">Kazan</div>
+                        <div class="view-details">
+                            <a href="#" class="link open-modal-btn" data-open-modal="magento-outsourcing">View details
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vacancy-item">
+                        <div class="vacancy-name">Product Designer</div>
+                        <div class="vacancy-location">Kazan</div>
+                        <div class="view-details">
+                            <a href="#" class="link open-modal-btn" data-open-modal="magento-outsourcing">View details
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-request-container">
+                    <a href="#" class="request-button">Send a Request</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="gl-modal account-modal career-modal" data-modal="magento-outsourcing">
+    <div class="modal_form">
+        <div class="modal_close">
+            <div class="plus-minus">
+                <div class="plus-minus-sign minus"></div>
+                <div class="plus-minus-sign plus"></div>
+            </div>
+        </div>
+        <div class="top-line">
+            <h2>Product Designer</h2>
+            <a href="#" class="btn-normal open-second-modal-btn" data-open-modal="request-form">Apply for this job</a>
+        </div>
+        <div class="modal_content">
+            <div class="modal_subtitle">Kazan     Design     Full-time</div>
+            <div class="modal_text">Figma is adding to our team of passionate people who are revolutionizing the world of design. We are building a browser-based design tool that looks and feels as good as a native application and has all the additional power and advantages that come from being built upon the web platform. If you’re looking to work at a disruptive company who is building the future of design tools, welcome to Figma.</div>
+            <div class="modal_subtitle">Responsibilities</div>
+            <ul class="or-list">
+                <li>Contribute to overall strategy and decision-making about product direction</li>
+                <li>Work cross-functionally with engineering and other business partners to arrive at the best possible designs</li>
+                <li>Design features that ship quickly and with high quality</li>
+                <li>Create flows, prototypes, and high-fidelity visuals for your features</li>
+                <li>Work closely with Engineering to ensure a high-quality implementation</li>
+                <li>Help with hiring, mentoring, and establishing a design culture within the company</li>
+            </ul>
+        </div>
+        <div class="about-button-container">
+            <a href="#" class="btn-normal open-second-modal-btn" data-open-modal="request-form">Apply for this job</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+<div class="gl-modal account-modal career-modal" data-modal="request-form">
+    <div class="modal_form">
+        <div class="modal_close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-arrow">
+                <use xlink:href="#back-arrow-icon"></use>
+            </svg>
+        </div>
+        <form action="">
+            <h2>Product Designer</h2>
+            <div class="input-container">
+                <div class="group">
+                    <h4>Submit your application</h4>
+                    <input type="text" class="disabled-field" placeholder="Attach resume / CV" disabled="">
+                    <input type="text" name="name" placeholder="Full name">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" name="email" placeholder="Current company">
+                </div>
+                <div class="group">
+                    <h4>Links</h4>
+                    <input type="text" name="interested" placeholder="LinkedIn URL">
+                    <input type="text" name="name" placeholder="GitHub URL">
+                    <input type="text" name="email" placeholder="Portfolio URL">
+                    <input type="text" name="email" placeholder="Other website">
+                </div>
+                <h4>Additional information</h4>
+                <textarea name="comment" placeholder="Add a cover letter or anything else you want to share"></textarea>
+            </div>
+            <button type="submit" class="btn-normal">Submit application</button>
+        </form>
+    </div>
+    <div class="second-overlay"></div>
+</div>
+
+
+
+<hr>
+<section class="bottom-menu">
+    <div class="row">
+        <div class="col-4 col-sm-12 col-md-6">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Extensions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-8 col-sm-12 col-md-6">
+            <div class="right">
+                <nav class="navbar navbar-expand-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">sales@mageinn.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">+7 900 322 7676</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/face.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social" href="#"><img src="assets/images/insta.svg"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="assets/images/MAGEINN-04.png" alt="">
+        </div>
+        <div class="col-md-8">
+            <h6>© 2014-2018 Mageinn. All Rights Reserved</h6>
+        </div>
+        <div class="col-md-2">
+            <h5>Sign in</h5>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/test.js"></script>
+</body>
+</html>
